@@ -142,6 +142,7 @@ data "aws_iam_policy_document" "policy" {
       "route53:ChangeTagsForResource",
       "route53:CreateHostedZone",
       "route53:DeleteHostedZone",
+      "route53:AssociateVPCWithHostedZone",
     ]
     resources = ["*"]
   }

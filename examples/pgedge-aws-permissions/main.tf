@@ -15,3 +15,8 @@ module "pgedge_role" {
     "arn:aws:iam::631662578350:root"
   ]
 }
+
+output "role_arn" {
+  description = "IAM role ARN"
+  value       = module.pgedge_role.role_arn
+}
