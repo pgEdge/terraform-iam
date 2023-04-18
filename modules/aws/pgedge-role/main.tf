@@ -108,6 +108,7 @@ data "aws_iam_policy_document" "policy" {
   statement {
     sid = "5"
     actions = [
+      "s3:CreateBucket",
       "s3:DeleteObject",
       "s3:DeleteObjectVersion",
       "s3:PutObject",
